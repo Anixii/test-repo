@@ -4,44 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .center{ 
-            display: flex; 
-            justify-self: center;
-            align-items: center;
-        }
-        .container{ 
-            width: 856px;
-            height: 446px;
-            border-radius: 25px;
-            background-color: gray;
-        }
-        .image{ 
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-    </style>
 </head>
 <body>
-    <div class="center"> 
-        <div class="container"> 
-            <img class="image" src="" alt="" id="image">
-        </div>
-    </div>
-    <script>
-        const getPhotoDog = async() =>{ 
-            const image = document.getElementById('image')
-            const data = await fetch('https://dog.ceo/api/breeds/image/random');
-            if(data.ok){ 
-                const jon= await data.json()
-                console.log(jon);
-                
-                image.src = jon.message
-            }
-        }
-        getPhotoDog()
-    </script>
+    Привет!
 </body>
 </html>
