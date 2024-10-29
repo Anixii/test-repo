@@ -1,0 +1,116 @@
+@import url("header.css");
+
+html, body {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.locationPage {
+    padding: 0% 15%;
+}
+
+.location-name-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.location-info-container_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 30%;
+}
+
+.info_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_name {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    
+
+}
+
+.info_value {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: rgba(110, 121, 140, 1);
+}
+
+.residents-title {
+
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: rgba(142, 142, 147, 1);
+}
+
+
+
+.charcters-list {
+    margin-top: 50px;
+    position: relative;
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: repeat(5, 250px);
+    gap: 40px 20px;
+
+    padding-bottom: 100px;
+}
+
+.charcter-list__element {
+    height: fit-content;
+    box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.375);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.charcter-list__element_img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.charcter-list__element_info {
+    padding: 10px 20px;
+}
+
+.charcter-list__element_info p {
+    margin: 0px;
+}
+
+.charcter-list__element_name {
+font-family: Roboto, sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0.15000000596046448px;
+text-align: left;
+color: rgba(0, 0, 0, 0.87);
+}
+
+.charcter-list__element_race {
+font-family: Roboto, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.25px;
+text-align: left;
+color: rgba(0, 0, 0, 0.6);
+}

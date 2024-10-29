@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/charcterPage.css">
+    <title>Charcter Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header__logo"><img class="header__logo_img" src="../img/logo-black.svg" alt="тут лого"></div>
+            <nav class="header__nav">
+                <a class="header__nav_link" href="../charctersPage.html">Персонажи</a>
+                <a class="header__nav_link" href="locationsPage.html">Места</a>
+                <a class="header__nav_link">Эпизоды</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="charcter-page" id="charcterPage">
+        <a class="go-back-button" href="../charctersPage.html"><img src="../img/arrow-back.svg" alt="">GO BACK</a>
+        <div class="charcter-img-container">
+            <img calss="charcter-img" id="charcterImage" src="" alt="">
+        </div>
+        <div class="charcter-name" id="charcterName"></div>
+        <div class="charcter-info">
+            <div class="charcter-info__infoContainer">
+                <p class="charcter-info__infoContainer-name">Information</p>
+                <div class="charcter-info__infoContainer-list" id="informationContainer">
+                    <div class="infoContainer-list_element">
+                        <p class="subtitle" id="gender">Gender</p>
+                        <p class="secondary-text" id="genderValue"></p>
+                    </div>
+                    <div class="infoContainer-list_element">
+                        <p class="subtitle" id="status">Status</p>
+                        <p class="secondary-text" id="statusValue"></p>
+                    </div>
+                    <div class="infoContainer-list_element">
+                        <p class="subtitle" id="specie">Specie</p>
+                        <p class="secondary-text" id="specieValue"></p>
+                    </div>
+                    <div class="infoContainer-list_element">
+                        <p class="subtitle" id="origin">Origin</p>
+                        <p class="secondary-text" id="originValue"></p>
+                    </div>
+                    <div class="infoContainer-list_element">
+                        <p class="subtitle" id="type">Type</p>
+                        <p class="secondary-text" id="typeValue"></p>
+                    </div>
+                    <div class="infoContainer-list_element">
+                        <p class="subtitle" id="location">Location</p>
+                        <p class="secondary-text" id="locationValue"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="charcter-info__infoContainer">
+                <p class="charcter-info__infoContainer-name">Episodes</p>
+                <div class="charcter-info__infoContainer-list" id="episodesList">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../scripts/getIds.js"></script>
+    <script type="module" src="../scripts/loadJson.js"></script>
+    <script type="module" src="../scripts/charcterPage.js"></script>
+</body>
+</html>

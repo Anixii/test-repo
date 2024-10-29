@@ -1,0 +1,39 @@
+
+.header {
+    height: 60px;
+    box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.375);
+}
+
+.header-wrap {
+    height: inherit;
+    display: flex;
+    padding: 0px 15%;
+}
+
+.header__logo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.header__nav {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+
+    
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.04px;
+    text-align: center;
+    
+}
+.header__nav a {
+    color: black;
+    text-decoration: none;
+}

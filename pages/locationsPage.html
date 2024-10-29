@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/locationsPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header__logo"><img class="header__logo_img" src="../img/logo-black.svg" alt="тут лого"></div>
+            <nav class="header__nav">
+                <a class="header__nav_link" href="../charctersPage.html">Персонажи</a>
+                <a class="header__nav_link" href="#">Места</a>
+                <a class="header__nav_link">Эпизоды</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="locationsPage">
+        <div class="logo"><img src="../img/rick-and-morty.svg" alt=""></div>
+
+        <div class="search-panel">
+            <div class="search-panel__filters-panel">
+                <div class="filters-panel__cont search">
+                    <img src="../img/search-Icon.svg">
+                    <input type="text" placeholder="Фильтрация по имени" id="input">
+                </div>
+                <div class="filters-panel__cont type">
+                    <select name="type" id="type" class="filter">
+                        <option value="" selected disabled>Type</option>
+                        <option value="planet">Planet</option>
+                        <option value="cluster">Cluster</option>
+                        <option value="space station">Space station</option>
+                        <option value="microverse">Microverse</option>
+                        <option value="tv">TV</option>
+                        <option value="resort">Resort</option>
+                        <option value="fantasy town">Fantasy town</option>
+                        <option value="dream">Dream</option>
+                        <option value="menagerie">Menagerie</option>
+                        <option value="game">Game</option>
+                        <option value="customs">Customs</option>
+                        <option value="dwarf planet">Dwarf planet (Celestial Dwarf)</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+                </div>
+                <div class="filters-panel__cont dimension">
+                    <select name="dimension" id="dimension" class="filter">
+                        <option value="" selected disabled>Dimension</option>
+                        <option value="dimension C-137">Dimension C-137</option>
+                        <option value="Post-Apocalyptic Dimension">Post-Apocalyptic Dimension</option>
+                        <option value="Replacement Dimension">Replacement Dimension</option>
+                        <option value="Cronenberg Dimension">Cronenberg Dimension</option>
+                        <option value="Fantasy Dimension">Fantasy Dimension</option>
+                        <option value="Dimension 5-126">Dimension 5-126</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+                    <button class="filters-panel__reset-arrow" id="reset-btn"><img src="../img/reset-arrow.svg" alt=""></button>
+                </div>
+
+                
+            </div>
+
+            <div class="search-panel__locations-list" id="locationsList">
+            </div>
+            <div class="btn-wrap">
+                <button id="loadmoreBtn">LOAD MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../scripts/loadJson.js"></script>
+    <script type="module" src="../scripts/searchController.js"></script>
+    <script type="module" src="../scripts/locationsPage.js"></script>
+</body>
+</html>

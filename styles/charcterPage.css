@@ -1,0 +1,139 @@
+@import url(header.css);
+
+html, body {
+    margin: 0px;
+}
+
+.charcter-page {
+    position: relative;
+    padding: 0% 15% 200px 15%;
+}
+
+.go-back-button {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    top: 20px;
+
+    font-family: Karla, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.04px;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+
+.charcter-img-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#charcterImage {
+    border: 5px solid rgba(242, 242, 247, 1);
+    border-radius: 50%;
+}
+
+.charcter-name {
+    font-family: Roboto, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56.25px;
+    text-align: center;
+
+}
+
+.charcter-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 10%;
+}
+
+.charcter-info__infoContainer-name {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    padding: 20px 0px;
+    color: rgba(142, 142, 147, 1);
+
+}
+
+.charcter-info__infoContainer-list {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#episodesList {
+    height: 364px;
+    overflow-y: scroll;
+}
+
+#episodesList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#episodesList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+#episodesList::-webkit-scrollbar-thumb {
+    background: #999999;
+    border-radius: 15px;
+}
+
+.infoContainer-list_element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoContainer-list_element .arrow {
+    position: absolute;
+    right: 20px;
+    
+}
+
+.infoContainer-list_element p {
+    margin: 0px;
+}
+
+.infoContainer-list_element .subtitle {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: rgb(8, 31, 50);
+}
+
+.infoContainer-list_element .secondary-text {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: rgba(110, 121, 140, 1);
+}
+
+.overline {
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: rgba(142, 142, 147, 1);
+
+}

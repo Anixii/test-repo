@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charters</title>
+    <link rel="stylesheet" href="styles/charctersPage.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header__logo"><img class="header__logo_img" src="img/logo-black.svg" alt="тут лого"></div>
+            <nav class="header__nav">
+                <a class="header__nav_link" href="#">Персонажи</a>
+                <a class="header__nav_link" href="pages/locationsPage.html">Места</a>
+                <a class="header__nav_link">Эпизоды</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="logo"><img class="logo_img" src="img/rickNmortyLOGO.svg" alt=""></div>
+
+    <div class="search-panel">
+        <div class="search-panel__filters-panel">
+            <div class="filters-panel__cont search">
+                <img src="img/search-Icon.svg">
+                <input type="text" placeholder="Фильтрация по имени" id="input">
+            </div>
+
+            <div class="filters-panel__cont race">
+                <select name="species" class="filter"id="race">
+                    <option value="" disabled selected>Раса</option>
+                    <option value="human">Человек</option>
+                    <option value="alien">Пришелец</option>
+                    <option value="humanoid">Гуманоид</option>
+                    
+                </select>
+            </div>
+
+            <div class="filters-panel__cont gender">
+                <select name="gender" class="filter">
+                    <option value="" disabled selected>Гендер</option>
+                    <option value="female">Женский</option>
+                    <option value="male">Мужской</option>
+                    <option value="genderless">Бесполный</option>
+                    <option value="unknown">Неизвестный</option>
+                </select>
+            </div>
+
+            <div class="filters-panel__cont status">
+            </select>
+            <select name="status" class="filter">
+                <option value="" disabled selected>Статус</option>
+                <option value="alive">Живой</option>
+                <option value="dead">Мертвый</option>
+                <option value="unknown">Неизвестно</option>
+            </select>
+            <button class="filters-panel__reset-arrow" id="reset-btn"><img src="img/reset-arrow.svg" alt=""></button>
+            </div>
+            
+        </div>
+
+
+        <div class="charcters-list" id="charcterList">
+        </div>
+
+        <div class="pages-selector">
+            <button class="pages-selector__button on-first-page-btn"><img src="img/double-left-arrow.svg"></button>
+            <button class="pages-selector__button on-prev-page-btn"><img src="img/left-arrow.svg"></button>
+            <div class="pages-selector__page-indicator current-page">1</div>
+            <button class="pages-selector__button on-next-page-btn"><img src="img/right-arrow.svg"></button>
+            <button class="pages-selector__button on-last-page-btn"><img src="img/double-right-arrow.svg"></button>
+        </div>
+
+    </div>
+
+    <script type="module" src="scripts/createListElements.js"></script>
+    <script type="module" src="scripts/loadJson.js"></script>
+    <script type="module" src="scripts/searchController.js"> </script>
+    <script type="module" src="scripts/script.js"></script>
+    
+</body>
+</html>

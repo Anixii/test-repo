@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/locationPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header__logo"><img class="header__logo_img" src="../img/logo-black.svg" alt="тут лого"></div>
+            <nav class="header__nav">
+                <a class="header__nav_link" href="../charctersPage.html">Персонажи</a>
+                <a class="header__nav_link" href="locationsPage.html">Места</a>
+                <a class="header__nav_link">Эпизоды</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="locationPage">
+        <div class="location-name-wrap">
+            <h1 class="location-name" id="name"></h1>
+        </div>
+        <div class="location-info-container_info">
+            <div class="info_wrap">
+                <p class="info_name">Type</p>
+                <p class="info_value" id="type"></p>
+            </div>
+            <div class="info_wrap">
+                <p class="info_name">Dimension</p>
+                <p class="info_value" id="dimension"></p>
+            </div>
+        </div>
+
+        <h6 class="residents-title">Residents</h6>
+
+        <div class="charcters-list" id="charcterList">
+        </div>
+    </div>
+
+    <script type="module" src="../scripts/getIds.js"></script>
+    <script type="module" src="../scripts/createListElements.js"></script>
+    <script type="module" src="../scripts/loadJson.js"></script>
+    <script type="module" src="../scripts/searchController.js"> </script>
+    <script type="module" src="../scripts/locationPage.js"></script>
+</body>
+</html>
